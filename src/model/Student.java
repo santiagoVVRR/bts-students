@@ -1,6 +1,6 @@
 package model;
 
-public class Student implements Comparable {
+public class Student implements Comparable<Student> {
 
 	private int code;
 	private String name;
@@ -45,6 +45,22 @@ public class Student implements Comparable {
 	public void setLeft(Student left) {
 		this.left = left;
 	}
+
+	@Override
+	public int compareTo(Student c) {
+		int anotherCode = c.getCode();
+		
+		if(code<anotherCode) {
+			return -1;
+		}else if(code>anotherCode) {
+			return 1;
+		}else {
+			return 0;
+		}
+		
+	}
+		
+	
 	
 	
 	

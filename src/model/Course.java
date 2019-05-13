@@ -22,7 +22,8 @@ public class Course {
 						added=true;
 					}else {
 						current=current.getLeft();
-					}else {
+					}
+				}else {
 						if(current.getRight()==null) {
 							current.setRight(s);
 							added=true;
@@ -32,13 +33,13 @@ public class Course {
 					}
 				}
 			}
-		}
+		
 	}
 	
 	
 	public Student searchStudent(int c) {
-		
-		
+
 		
 	}
+
 }
