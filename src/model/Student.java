@@ -1,6 +1,6 @@
 package model;
 
-public class Student {
+public class Student implements Comparable {
 
 	private int code;
 	private String name;
@@ -29,6 +29,23 @@ public class Student {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public Student getRight() {
+		return right;
+	}
+
+	public void setRight(Student right) {
+		this.right = right;
+	}
+
+	public Student getLeft() {
+		return left;
+	}
+
+	public void setLeft(Student left) {
+		this.left = left;
+	}
+	
 	
 	
 	
